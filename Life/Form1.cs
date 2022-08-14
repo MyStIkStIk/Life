@@ -21,11 +21,10 @@ namespace Life
         {
 
         }
-
         private void StartButton_Click(object sender, EventArgs e)
         {
-            LifeLocation lifeLocation = new LifeLocation();
-            lifeLocation.CreateControl();
+            LifeStarter lifeLocation = new LifeStarter();
+            lifeLocation.ShowDialog();
         }
     }
 }

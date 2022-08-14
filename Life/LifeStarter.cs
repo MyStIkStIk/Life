@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Life
 {
-    public partial class LifeLocation : UserControl
+    public partial class LifeStarter : Form
     {
-        public LifeLocation()
+        public LifeStarter()
         {
             InitializeComponent();
-        }
-
-        private void LifeLocation_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
