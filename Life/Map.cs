@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace Life
 {
-    internal class Map
+    internal static class Map
     {
         static int[,] map = new int[10, 10];
-        public int[,] MyMap
+        public static int[,] MyMap
         {
             get
             {

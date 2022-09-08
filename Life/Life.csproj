@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LifeSimulator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LifeSimulator.Designer.cs">
+      <DependentUpon>LifeSimulator.cs</DependentUpon>
+    </Compile>
     <Compile Include="LifeStarter.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -53,16 +59,19 @@
       <DependentUpon>LifeStarter.cs</DependentUpon>
     </Compile>
     <Compile Include="Map.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="MainWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="LifeSimulator.resx">
+      <DependentUpon>LifeSimulator.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LifeStarter.resx">
       <DependentUpon>LifeStarter.cs</DependentUpon>

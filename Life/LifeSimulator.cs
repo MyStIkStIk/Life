@@ -10,21 +10,16 @@ using System.Windows.Forms;
 
 namespace Life
 {
-    public partial class Form1 : Form
+    public partial class LifeSimulator : Form
     {
-        public Form1()
+        public LifeSimulator()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void LifeSimulator_Load(object sender, EventArgs e)
         {
 
-        }
-        private void StartButton_Click(object sender, EventArgs e)
-        {
-            LifeStarter lifeLocation = new LifeStarter();
-            lifeLocation.ShowDialog();
         }
     }
 }
