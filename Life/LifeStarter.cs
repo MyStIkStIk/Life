@@ -79,8 +79,11 @@ namespace Life
         private void StartButton_Click(object sender, EventArgs e)
         {
             Map.MyMap = map;
-            LifeSimulator life = new LifeSimulator();
-            life.ShowDialog();
+            new Thread(() =>
+            {
+                LifeSimulator life = new LifeSimulator();
+                life.ShowDialog();
+            }).Start();
             this.Close();
         }
     }
