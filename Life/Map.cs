@@ -8,7 +8,7 @@ namespace Life
 {
     internal static class Map
     {
-        static int[,] map = new int[10, 10];
+        static int[,] map = new int[15, 15];
         public static int[,] MyMap
         {
             get

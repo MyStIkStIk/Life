@@ -166,7 +166,7 @@ namespace Life
                 }
             }
             if ((lifeList.Count == 3) && resultmap[i, j] == 0)
-                resultmap[i, j] = 1;
+                resultmap[i, j] = 2;
             if ((lifeList.Count < 3  || lifeList.Count > 4) && resultmap[i, j] == 1)
             {
                 resultmap[i, j] = 0;

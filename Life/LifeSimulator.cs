@@ -14,7 +14,7 @@ namespace Life
 {
     public partial class LifeSimulator : Form
     {
-        static int[,] map = Map.MyMap;
+        int[,] map;
         const int x = 75;
         const int y = 75;
         static Image lifeImage;
@@ -22,6 +22,7 @@ namespace Life
 
         public LifeSimulator()
         {
+            map = Map.MyMap;
             InitializeComponent();
         }
         private void LifeSimulator_Load(object sender, EventArgs e)
@@ -33,7 +34,7 @@ namespace Life
             lifeImage = new Bitmap(map.GetLength(1) * x, map.GetLength(0) * y);
             g = Graphics.FromImage(lifeImage);
             timer1 = new Timer();
-            timer1.Interval = 1000;
+            timer1.Interval = 250;
             timer1.Start();
             timer1.Tick += new EventHandler(UpdateImage);
         }
@@ -46,6 +47,10 @@ namespace Life
         {
             Graphics g = e.Graphics;
             DrawMap(g);
+        }
+
+        private void LifeSimulator_FormClosed(object sender, FormClosedEventArgs e)
+        {
         }
     }
 }

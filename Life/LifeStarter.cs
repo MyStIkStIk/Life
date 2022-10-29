@@ -13,10 +13,11 @@ namespace Life
 {
     public partial class LifeStarter : Form
     {
-        static int[,] map = new int[Map.MyMap.GetLength(0), Map.MyMap.GetLength(1)];
+        static int[,] map;
         public LifeStarter()
         {
             InitializeComponent();
+            map = new int[Map.MyMap.GetLength(0), Map.MyMap.GetLength(1)];
         }
         private void LifeStarter_Load(object sender, EventArgs e)
         {

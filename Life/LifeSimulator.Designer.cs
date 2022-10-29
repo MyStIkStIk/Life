@@ -51,6 +51,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "LifeSimulator";
             this.Text = "Form1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.LifeSimulator_FormClosed);
             this.Load += new System.EventHandler(this.LifeSimulator_Load);
             this.Paint += new System.Windows.Forms.PaintEventHandler(this.LifeSimulator_Paint);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
